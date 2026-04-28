@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="K&J Caribbean Twitter/X Logo">
+  <!-- Twitter/X profile: 400×400, circular display -->
+  <defs>
+    <linearGradient id="bgTW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062E2E"/>
+      <stop offset="50%" stop-color="#0A6E6E"/>
+      <stop offset="100%" stop-color="#0D9B9B"/>
+    </linearGradient>
+    <linearGradient id="sunTW" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4C430"/>
+      <stop offset="100%" stop-color="#D4A017"/>
+    </linearGradient>
+    <clipPath id="circleTW">
+      <circle cx="200" cy="200" r="196"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="200" cy="200" r="200" fill="#062E2E"/>
+  <circle cx="200" cy="200" r="196" fill="url(#bgTW)"/>
+
+  <g clip-path="url(#circleTW)">
+    <!-- Sun rays -->
+    <g transform="translate(200,158)" opacity="0.15">
+      <line x1="0" y1="-120" x2="0" y2="-68" stroke="#F4C430" stroke-width="2.5"/>
+      <line x1="85" y1="-85" x2="48" y2="-48" stroke="#F4C430" stroke-width="2.5"/>
+      <line x1="120" y1="0" x2="68" y2="0" stroke="#F4C430" stroke-width="2.5"/>
+      <line x1="-85" y1="-85" x2="-48" y2="-48" stroke="#F4C430" stroke-width="2.5"/>
+      <line x1="-120" y1="0" x2="-68" y2="0" stroke="#F4C430" stroke-width="2.5"/>
+      <line x1="45" y1="-113" x2="26" y2="-64" stroke="#F4C430" stroke-width="2"/>
+      <line x1="-45" y1="-113" x2="-26" y2="-64" stroke="#F4C430" stroke-width="2"/>
+    </g>
+
+    <!-- Sun -->
+    <circle cx="200" cy="158" r="36" fill="url(#sunTW)" opacity="0.85"/>
+    <circle cx="200" cy="158" r="28" fill="#F4C430" opacity="0.6"/>
+
+    <!-- Palm left -->
+    <g transform="translate(72,270)">
+      <path d="M10 100 Q11 74 9 45 Q8 25 10 0" stroke="#D4A017" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M10,4 Q-6,-8 -20,-19 Q-10,-13 0,-4 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M10,4 Q2,-15 -2,-30 Q5,-18 8,-4 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M10,4 Q23,-7 36,-16 Q26,-11 11,-3 Z" fill="#3A9A5C" opacity="0.6"/>
+    </g>
+
+    <!-- Palm right -->
+    <g transform="translate(328,270) scale(-1,1)">
+      <path d="M10 100 Q11 74 9 45 Q8 25 10 0" stroke="#D4A017" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M10,4 Q-6,-8 -20,-19 Q-10,-13 0,-4 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M10,4 Q2,-15 -2,-30 Q5,-18 8,-4 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M10,4 Q23,-7 36,-16 Q26,-11 11,-3 Z" fill="#3A9A5C" opacity="0.6"/>
+    </g>
+
+    <!-- Waves -->
+    <path d="M4 322 Q50 308 100 316 Q150 326 200 316 Q250 308 300 316 Q350 326 396 316 L396 400 L4 400 Z" fill="#074A4A" opacity="0.75"/>
+    <path d="M4 334 Q60 320 120 331 Q180 342 240 331 Q300 320 360 331 L396 331 L396 400 L4 400 Z" fill="#062E2E" opacity="0.9"/>
+  </g>
+
+  <!-- Gold border -->
+  <circle cx="200" cy="200" r="196" fill="none" stroke="#D4A017" stroke-width="3.5"/>
+  <circle cx="200" cy="200" r="188" fill="none" stroke="#D4A017" stroke-width="1" stroke-dasharray="5 4" opacity="0.55"/>
+
+  <!-- Arc texts -->
+  <path id="topArcTW" d="M 40,200 A 160,160 0 0,1 360,200" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="18" font-weight="700" fill="#D4A017" letter-spacing="8">
+    <textPath href="#topArcTW" startOffset="50%" text-anchor="middle">CARIBBEAN</textPath>
+  </text>
+
+  <path id="botArcTW" d="M 44,205 A 156,156 0 0,0 356,205" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="12" font-weight="600" fill="rgba(255,255,255,.68)" letter-spacing="4">
+    <textPath href="#botArcTW" startOffset="50%" text-anchor="middle">MARKET &amp; RESTAURANT</textPath>
+  </text>
+
+  <!-- K&J -->
+  <text x="200" y="236"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, serif" font-size="100" font-weight="900"
+        fill="#FFFFFF" letter-spacing="-3">K&amp;J</text>
+
+  <text x="200" y="238"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, serif" font-size="100" font-weight="900"
+        fill="none" stroke="#D4A017" stroke-width="1"
+        letter-spacing="-3" opacity="0.25">K&amp;J</text>
+
+  <!-- Stars -->
+  <text x="82" y="240" text-anchor="middle" font-size="13" fill="#D4A017" opacity="0.85">★</text>
+  <text x="318" y="240" text-anchor="middle" font-size="13" fill="#D4A017" opacity="0.85">★</text>
+
+  <!-- TAMPA · FL -->
+  <text x="200" y="315"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="11" font-weight="600"
+        fill="rgba(255,255,255,.48)" letter-spacing="5">TAMPA · FL</text>
+</svg>

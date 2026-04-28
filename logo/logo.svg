@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="K&J Caribbean Market and Restaurant Logo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#062E2E"/>
+      <stop offset="55%"  stop-color="#0A6E6E"/>
+      <stop offset="100%" stop-color="#0D9B9B"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#F4C430"/>
+      <stop offset="100%" stop-color="#D4A017"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#074A4A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#062E2E"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="250" cy="250" r="232"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="250" cy="250" r="245" fill="#074A4A"/>
+  <circle cx="250" cy="250" r="232" fill="url(#bgGrad)"/>
+
+  <!-- Subtle dot pattern -->
+  <g clip-path="url(#circleClip)" opacity="0.06">
+    <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="14" cy="14" r="1.5" fill="white"/>
+    </pattern>
+    <rect x="18" y="18" width="464" height="464" fill="url(#dots)"/>
+  </g>
+
+  <!-- Sun rays (background) -->
+  <g clip-path="url(#circleClip)" opacity="0.12">
+    <g transform="translate(250,195)">
+      <line x1="0" y1="-200" x2="0"   y2="-110" stroke="#F4C430" stroke-width="3"/>
+      <line x1="138" y1="-142" x2="76" y2="-78" stroke="#F4C430" stroke-width="3"/>
+      <line x1="200" y1="0"   x2="110" y2="0"   stroke="#F4C430" stroke-width="3"/>
+      <line x1="138" y1="142" x2="76" y2="78"   stroke="#F4C430" stroke-width="3"/>
+      <line x1="-138" y1="-142" x2="-76" y2="-78" stroke="#F4C430" stroke-width="3"/>
+      <line x1="-200" y1="0"  x2="-110" y2="0"  stroke="#F4C430" stroke-width="3"/>
+      <line x1="-138" y1="142" x2="-76" y2="78" stroke="#F4C430" stroke-width="3"/>
+      <line x1="71" y1="-185" x2="39" y2="-102" stroke="#F4C430" stroke-width="2"/>
+      <line x1="-71" y1="-185" x2="-39" y2="-102" stroke="#F4C430" stroke-width="2"/>
+      <line x1="185" y1="-71" x2="102" y2="-39" stroke="#F4C430" stroke-width="2"/>
+      <line x1="185" y1="71"  x2="102" y2="39"  stroke="#F4C430" stroke-width="2"/>
+      <line x1="-185" y1="-71" x2="-102" y2="-39" stroke="#F4C430" stroke-width="2"/>
+      <line x1="-185" y1="71" x2="-102" y2="39"  stroke="#F4C430" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Sun circle -->
+  <circle cx="250" cy="195" r="44" fill="url(#sunGrad)" opacity="0.9"/>
+  <circle cx="250" cy="195" r="36" fill="#F4C430" opacity="0.7"/>
+
+  <!-- Palm tree LEFT -->
+  <g transform="translate(98,290)">
+    <path d="M 12 130 Q 14 95 10 55 Q 8 30 12 0 Q 14 -5 12 0 Q 16 30 14 55 Q 10 95 12 130 Z" fill="#D4A017" opacity="0.55"/>
+    <path d="M12,5 Q-5,-8 -22,-22 Q-12,-14 0,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q2,-18 -2,-36 Q6,-22 10,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q28,-8 44,-20 Q32,-12 14,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q-2,-5 -18,-6 Q-8,-2 2,2 Z" fill="#2E8050" opacity="0.5"/>
+    <path d="M12,5 Q26,-3 40,-2 Q28,2 14,4 Z" fill="#2E8050" opacity="0.5"/>
+  </g>
+
+  <!-- Palm tree RIGHT (mirrored) -->
+  <g transform="translate(402,290) scale(-1,1)">
+    <path d="M 12 130 Q 14 95 10 55 Q 8 30 12 0 Q 14 -5 12 0 Q 16 30 14 55 Q 10 95 12 130 Z" fill="#D4A017" opacity="0.55"/>
+    <path d="M12,5 Q-5,-8 -22,-22 Q-12,-14 0,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q2,-18 -2,-36 Q6,-22 10,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q28,-8 44,-20 Q32,-12 14,0 Z" fill="#3A9A5C" opacity="0.6"/>
+    <path d="M12,5 Q-2,-5 -18,-6 Q-8,-2 2,2 Z" fill="#2E8050" opacity="0.5"/>
+    <path d="M12,5 Q26,-3 40,-2 Q28,2 14,4 Z" fill="#2E8050" opacity="0.5"/>
+  </g>
+
+  <!-- Waves at bottom -->
+  <g clip-path="url(#circleClip)">
+    <path d="M 18 380 Q 80 358 140 375 Q 200 392 260 375 Q 320 358 380 375 Q 420 384 482 370 L 482 482 L 18 482 Z" fill="url(#waveGrad)" opacity="0.75"/>
+    <path d="M 18 400 Q 90 380 155 398 Q 220 416 285 398 Q 350 380 415 398 Q 450 407 482 395 L 482 482 L 18 482 Z" fill="#062E2E" opacity="0.9"/>
+  </g>
+
+  <!-- Gold border rings -->
+  <circle cx="250" cy="250" r="232" fill="none" stroke="#D4A017" stroke-width="3.5"/>
+  <circle cx="250" cy="250" r="222" fill="none" stroke="#D4A017" stroke-width="1" stroke-dasharray="6 5" stroke-dashoffset="0" opacity="0.6"/>
+  <circle cx="250" cy="250" r="245" fill="none" stroke="#D4A017" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- "CARIBBEAN" arc text at top -->
+  <path id="topArc" d="M 82,250 A 168,168 0 0,1 418,250" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="19" font-weight="700" fill="#D4A017" letter-spacing="10">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">CARIBBEAN</textPath>
+  </text>
+
+  <!-- "MARKET & RESTAURANT" arc text at bottom -->
+  <path id="botArc" d="M 85,255 A 165,165 0 0,0 415,255" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="13.5" font-weight="600" fill="rgba(255,255,255,0.75)" letter-spacing="5">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">MARKET &amp; RESTAURANT</textPath>
+  </text>
+
+  <!-- Main "K&J" text -->
+  <text x="250" y="258"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="108"
+        font-weight="900"
+        fill="#FFFFFF"
+        letter-spacing="-3">K&amp;J</text>
+
+  <!-- Gold shadow/glow effect for K&J -->
+  <text x="250" y="262"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-size="108"
+        font-weight="900"
+        fill="none"
+        stroke="#D4A017"
+        stroke-width="1"
+        letter-spacing="-3"
+        opacity="0.3">K&amp;J</text>
+
+  <!-- Stars -->
+  <text x="110" y="262" text-anchor="middle" font-size="14" fill="#D4A017" opacity="0.85">★</text>
+  <text x="390" y="262" text-anchor="middle" font-size="14" fill="#D4A017" opacity="0.85">★</text>
+
+  <!-- TAMPA · FL -->
+  <text x="250" y="340"
+        text-anchor="middle"
+        font-family="'Arial', sans-serif"
+        font-size="12"
+        font-weight="600"
+        fill="rgba(255,255,255,0.55)"
+        letter-spacing="6">TAMPA · FL</text>
+</svg>

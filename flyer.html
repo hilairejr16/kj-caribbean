@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Advertising Flyer — K&J Caribbean Market & Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="logo/logo.svg" type="image/svg+xml">
+  <style>
+    body { background: #e8d5b0; }
+    .flyer-wrap { padding: 2rem 1rem 4rem; }
+    .flyer-toolbar {
+      display: flex;
+      gap: .75rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    @media print {
+      .flyer-toolbar { display: none !important; }
+      body { background: white; margin: 0; }
+      .flyer-wrap { padding: 0; background: white; min-height: unset; }
+      .flyer-doc { border-radius: 0; box-shadow: none; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="flyer-wrap">
+
+  <!-- Toolbar (hidden on print) -->
+  <div class="flyer-toolbar">
+    <button onclick="window.print()" class="btn btn-primary">🖨️ Print Flyer</button>
+    <a href="index.html" class="btn btn-teal">← Back to Site</a>
+    <!-- Language buttons for flyer -->
+    <button onclick="setFlyerLang('en')" class="btn" style="background:var(--cream-dark);color:var(--text);">🇺🇸 EN</button>
+    <button onclick="setFlyerLang('fr')" class="btn" style="background:var(--cream-dark);color:var(--text);">🇫🇷 FR</button>
+    <button onclick="setFlyerLang('ht')" class="btn" style="background:var(--cream-dark);color:var(--text);">🇭🇹 HT</button>
+    <button onclick="setFlyerLang('es')" class="btn" style="background:var(--cream-dark);color:var(--text);">🇪🇸 ES</button>
+  </div>
+
+  <!-- ═══ FLYER DOCUMENT ════════════════════════════════════ -->
+  <div class="flyer-doc" id="flyer">
+
+    <!-- Header -->
+    <div class="flyer-top">
+      <div class="flyer-logo-wrap">
+        <img src="logo/logo.svg" alt="K&J Caribbean" style="width:110px;height:110px;border-radius:50%;border:3px solid rgba(255,255,255,.3);">
+      </div>
+      <div class="flyer-title">K&amp;J <span>Caribbean</span></div>
+      <div style="font-family:var(--font-head);font-size:1rem;color:rgba(255,255,255,.7);letter-spacing:.12em;text-transform:uppercase;margin-bottom:.5rem;">Market &amp; Restaurant</div>
+      <div class="flyer-tagline" id="flyer-tagline">Your Caribbean Taste of Home</div>
+    </div>
+
+    <!-- Ribbon -->
+    <div class="flyer-ribbon" id="flyer-ribbon">
+      🌴 &nbsp; NOW OPEN — COME TASTE THE ISLANDS &nbsp; 🌴
+    </div>
+
+    <!-- Body -->
+    <div class="flyer-body">
+
+      <!-- Highlights -->
+      <div class="flyer-highlights">
+        <div class="flyer-hl">
+          <div class="flyer-hl-icon">🛒</div>
+          <div class="flyer-hl-text">
+            <strong id="flyer-hl1-title">Caribbean Market</strong>
+            <span id="flyer-hl1-desc">Fresh tropical produce, spices &amp; specialty groceries</span>
+          </div>
+        </div>
+        <div class="flyer-hl">
+          <div class="flyer-hl-icon">🍽️</div>
+          <div class="flyer-hl-text">
+            <strong id="flyer-hl2-title">Restaurant</strong>
+            <span id="flyer-hl2-desc">Griot, jerk chicken, oxtail, rice &amp; beans and more</span>
+          </div>
+        </div>
+        <div class="flyer-hl">
+          <div class="flyer-hl-icon">🎉</div>
+          <div class="flyer-hl-text">
+            <strong id="flyer-hl3-title">Catering</strong>
+            <span id="flyer-hl3-desc">Events, parties &amp; special gatherings</span>
+          </div>
+        </div>
+        <div class="flyer-hl">
+          <div class="flyer-hl-icon">🗣️</div>
+          <div class="flyer-hl-text">
+            <strong id="flyer-hl4-title">4 Languages</strong>
+            <span>English · Français · Kreyòl · Español</span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="flyer-divider">
+
+      <!-- QR Code -->
+      <div class="flyer-qr-section">
+        <div style="font-size:.82rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;font-weight:700;margin-bottom:1rem;" id="flyer-qr-label">Scan to Visit Our Website</div>
+        <div class="qr-container">
+          <canvas id="qr-canvas"></canvas>
+        </div>
+        <p id="flyer-url" style="font-size:.78rem;color:var(--text-muted);margin-top:.5rem;font-weight:600;">kjcaribbean.com</p>
+      </div>
+
+    </div><!-- /flyer-body -->
+
+    <!-- Contact bar -->
+    <div class="flyer-contact">
+      <div class="flyer-contact-item">
+        <div class="fc-label" id="fc-addr-label">Address</div>
+        <div class="fc-value">7629 N 56th Street<br>Tampa, FL 33617</div>
+      </div>
+      <div class="flyer-contact-item">
+        <div class="fc-label" id="fc-phone-label">Phone</div>
+        <div class="fc-value" style="font-size:1.1rem;font-weight:700;">813-443-0164</div>
+      </div>
+      <div class="flyer-contact-item">
+        <div class="fc-label" id="fc-hours-label">Hours</div>
+        <div class="fc-value" id="fc-hours">Mon–Sat: 9AM–8PM<br>Sunday: 10AM–6PM</div>
+      </div>
+      <div class="flyer-contact-item">
+        <div class="fc-label">Open</div>
+        <div class="fc-value" style="font-weight:700;color:var(--gold-light);" id="fc-open">7 Days a Week 🌴</div>
+      </div>
+    </div>
+
+    <!-- Footer bar -->
+    <div class="flyer-footer-bar">
+      <p id="flyer-footer-text">© 2025 K&amp;J Caribbean Market &amp; Restaurant · Tampa, FL</p>
+      <div class="flyer-langs">
+        <span class="flyer-lang-badge">EN</span>
+        <span class="flyer-lang-badge">FR</span>
+        <span class="flyer-lang-badge">HT</span>
+        <span class="flyer-lang-badge">ES</span>
+      </div>
+    </div>
+
+  </div><!-- /flyer-doc -->
+</div><!-- /flyer-wrap -->
+
+<!-- QR code library (CDN, no install) -->
+<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js"></script>
+<script src="js/i18n.js"></script>
+<script>
+  /* Website URL for QR code — update when domain is set */
+  const SITE_URL = 'https://kjcaribbean.com';
+
+  function generateQR() {
+    QRCode.toCanvas(document.getElementById('qr-canvas'), SITE_URL, {
+      width: 180,
+      margin: 1,
+      color: { dark: '#074A4A', light: '#FFFFFF' }
+    }, function(err) {
+      if (err) {
+        document.getElementById('qr-canvas').style.display = 'none';
+        document.getElementById('flyer-url').textContent = SITE_URL;
+      }
+    });
+  }
+
+  const flyerTexts = {
+    en: {
+      tagline: "Your Caribbean Taste of Home",
+      ribbon:  "🌴  NOW OPEN — COME TASTE THE ISLANDS  🌴",
+      hl1_t: "Caribbean Market",  hl1_d: "Fresh tropical produce, spices & specialty groceries",
+      hl2_t: "Restaurant",        hl2_d: "Griot, jerk chicken, oxtail, rice & beans and more",
+      hl3_t: "Catering",          hl3_d: "Events, parties & special gatherings",
+      hl4_t: "4 Languages",
+      qr_label: "Scan to Visit Our Website",
+      addr_l: "Address", phone_l: "Phone", hours_l: "Hours",
+      hours: "Mon–Sat: 9AM–8PM\nSunday: 10AM–6PM",
+      open: "7 Days a Week 🌴",
+      footer: "© 2025 K&J Caribbean Market & Restaurant · Tampa, FL"
+    },
+    fr: {
+      tagline: "Votre Goût Caribéen de la Maison",
+      ribbon:  "🌴  OUVERT MAINTENANT — VENEZ GOÛTER LES ÎLES  🌴",
+      hl1_t: "Marché Caribéen",      hl1_d: "Produits tropicaux frais, épices & épicerie spécialisée",
+      hl2_t: "Restaurant",           hl2_d: "Griot, poulet jerk, queue de bœuf, riz et plus",
+      hl3_t: "Traiteur",             hl3_d: "Événements, fêtes & réceptions spéciales",
+      hl4_t: "4 Langues",
+      qr_label: "Scannez pour Visiter Notre Site",
+      addr_l: "Adresse", phone_l: "Téléphone", hours_l: "Horaires",
+      hours: "Lun–Sam: 9h–20h\nDimanche: 10h–18h",
+      open: "7 Jours par Semaine 🌴",
+      footer: "© 2025 K&J Caribbean Market & Restaurant · Tampa, FL"
+    },
+    ht: {
+      tagline: "Gou Karayib Ou Lakay",
+      ribbon:  "🌴  OUVÈ KOUNYE A — VINI GOUTE ZIL YO  🌴",
+      hl1_t: "Makèt Karayib",    hl1_d: "Pwodui twopikal fre, epis ak pwovizyon espesyal",
+      hl2_t: "Restoran",         hl2_d: "Griot, poulet jerk, ke bèf, diri ak pwa ak plis",
+      hl3_t: "Trètè",            hl3_d: "Evènman, fèt ak rasanbleman espesyal",
+      hl4_t: "4 Lang",
+      qr_label: "Eskane pou Vizite Sit Nou",
+      addr_l: "Adrès", phone_l: "Telefòn", hours_l: "Orè",
+      hours: "Lendi–Samdi: 9h–20h\nDimanch: 10h–18h",
+      open: "7 Jou pa Semèn 🌴",
+      footer: "© 2025 K&J Caribbean Market & Restaurant · Tampa, FL"
+    },
+    es: {
+      tagline: "Tu Sabor Caribeño de Casa",
+      ribbon:  "🌴  AHORA ABIERTO — VEN A PROBAR LAS ISLAS  🌴",
+      hl1_t: "Mercado Caribeño",  hl1_d: "Productos tropicales frescos, especias & abarrotes",
+      hl2_t: "Restaurante",       hl2_d: "Griot, pollo jerk, rabo de res, arroz y más",
+      hl3_t: "Catering",          hl3_d: "Eventos, fiestas & reuniones especiales",
+      hl4_t: "4 Idiomas",
+      qr_label: "Escanea para Visitar Nuestro Sitio",
+      addr_l: "Dirección", phone_l: "Teléfono", hours_l: "Horario",
+      hours: "Lun–Sáb: 9AM–8PM\nDomingo: 10AM–6PM",
+      open: "7 Días a la Semana 🌴",
+      footer: "© 2025 K&J Caribbean Market & Restaurant · Tampa, FL"
+    }
+  };
+
+  function setFlyerLang(lang) {
+    const t = flyerTexts[lang] || flyerTexts.en;
+    document.getElementById('flyer-tagline').textContent  = t.tagline;
+    document.getElementById('flyer-ribbon').textContent   = t.ribbon;
+    document.getElementById('flyer-hl1-title').textContent = t.hl1_t;
+    document.getElementById('flyer-hl1-desc').textContent  = t.hl1_d;
+    document.getElementById('flyer-hl2-title').textContent = t.hl2_t;
+    document.getElementById('flyer-hl2-desc').textContent  = t.hl2_d;
+    document.getElementById('flyer-hl3-title').textContent = t.hl3_t;
+    document.getElementById('flyer-hl3-desc').textContent  = t.hl3_d;
+    document.getElementById('flyer-hl4-title').textContent = t.hl4_t;
+    document.getElementById('flyer-qr-label').textContent  = t.qr_label;
+    document.getElementById('fc-addr-label').textContent   = t.addr_l;
+    document.getElementById('fc-phone-label').textContent  = t.phone_l;
+    document.getElementById('fc-hours-label').textContent  = t.hours_l;
+    document.getElementById('fc-hours').innerHTML          = t.hours.replace('\n','<br>');
+    document.getElementById('fc-open').textContent        = t.open;
+    document.getElementById('flyer-footer-text').innerHTML = t.footer;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    generateQR();
+    setFlyerLang(localStorage.getItem('kj_lang') || 'en');
+  });
+</script>
+</body>
+</html>

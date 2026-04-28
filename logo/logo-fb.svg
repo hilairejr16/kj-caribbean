@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-label="K&J Caribbean Facebook Logo">
+  <!-- Facebook profile: recommended 180×180 (scales from 800×800) -->
+  <defs>
+    <linearGradient id="bgFB" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062E2E"/>
+      <stop offset="55%" stop-color="#0A6E6E"/>
+      <stop offset="100%" stop-color="#0D9B9B"/>
+    </linearGradient>
+    <linearGradient id="sunFB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4C430"/>
+      <stop offset="100%" stop-color="#D4A017"/>
+    </linearGradient>
+    <clipPath id="circleFB">
+      <circle cx="400" cy="400" r="390"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="400" cy="400" r="400" fill="#0A2E2E"/>
+  <circle cx="400" cy="400" r="390" fill="url(#bgFB)"/>
+
+  <g clip-path="url(#circleFB)">
+    <!-- Sun rays -->
+    <g transform="translate(400,310)" opacity="0.15">
+      <line x1="0" y1="-240" x2="0" y2="-135" stroke="#F4C430" stroke-width="4"/>
+      <line x1="170" y1="-170" x2="95" y2="-95" stroke="#F4C430" stroke-width="4"/>
+      <line x1="240" y1="0" x2="135" y2="0" stroke="#F4C430" stroke-width="4"/>
+      <line x1="-170" y1="-170" x2="-95" y2="-95" stroke="#F4C430" stroke-width="4"/>
+      <line x1="-240" y1="0" x2="-135" y2="0" stroke="#F4C430" stroke-width="4"/>
+      <line x1="90" y1="-225" x2="52" y2="-128" stroke="#F4C430" stroke-width="3"/>
+      <line x1="-90" y1="-225" x2="-52" y2="-128" stroke="#F4C430" stroke-width="3"/>
+      <line x1="225" y1="-90" x2="128" y2="-52" stroke="#F4C430" stroke-width="3"/>
+      <line x1="-225" y1="-90" x2="-128" y2="-52" stroke="#F4C430" stroke-width="3"/>
+    </g>
+
+    <!-- Sun -->
+    <circle cx="400" cy="310" r="72" fill="url(#sunFB)" opacity="0.85"/>
+    <circle cx="400" cy="310" r="55" fill="#F4C430" opacity="0.6"/>
+
+    <!-- Palm tree left -->
+    <g transform="translate(145,530)">
+      <path d="M18 200 Q20 148 16 90 Q14 50 18 0" stroke="#D4A017" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M18,8 Q-12,-15 -40,-38 Q-20,-26 0,-8 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M18,8 Q4,-30 -4,-58 Q10,-36 16,-8 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M18,8 Q46,-14 72,-32 Q52,-22 22,-6 Z" fill="#3A9A5C" opacity="0.6"/>
+    </g>
+
+    <!-- Palm tree right -->
+    <g transform="translate(655,530) scale(-1,1)">
+      <path d="M18 200 Q20 148 16 90 Q14 50 18 0" stroke="#D4A017" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.55"/>
+      <path d="M18,8 Q-12,-15 -40,-38 Q-20,-26 0,-8 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M18,8 Q4,-30 -4,-58 Q10,-36 16,-8 Z" fill="#3A9A5C" opacity="0.6"/>
+      <path d="M18,8 Q46,-14 72,-32 Q52,-22 22,-6 Z" fill="#3A9A5C" opacity="0.6"/>
+    </g>
+
+    <!-- Waves -->
+    <path d="M10 640 Q100 615 200 630 Q300 648 400 630 Q500 615 600 630 Q700 648 790 630 L790 800 L10 800 Z" fill="#074A4A" opacity="0.75"/>
+    <path d="M10 665 Q120 640 240 658 Q360 676 480 658 Q600 640 720 658 L790 658 L790 800 L10 800 Z" fill="#062E2E" opacity="0.9"/>
+  </g>
+
+  <!-- Gold border -->
+  <circle cx="400" cy="400" r="390" fill="none" stroke="#D4A017" stroke-width="6"/>
+  <circle cx="400" cy="400" r="375" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-dasharray="10 8" opacity="0.55"/>
+
+  <!-- CARIBBEAN top text -->
+  <path id="topArcFB" d="M 80,400 A 320,320 0 0,1 720,400" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="36" font-weight="700" fill="#D4A017" letter-spacing="16">
+    <textPath href="#topArcFB" startOffset="50%" text-anchor="middle">CARIBBEAN</textPath>
+  </text>
+
+  <!-- MARKET & RESTAURANT bottom arc -->
+  <path id="botArcFB" d="M 88,405 A 312,312 0 0,0 712,405" fill="none"/>
+  <text font-family="'Arial Narrow', Arial, sans-serif" font-size="24" font-weight="600" fill="rgba(255,255,255,.7)" letter-spacing="8">
+    <textPath href="#botArcFB" startOffset="50%" text-anchor="middle">MARKET &amp; RESTAURANT</textPath>
+  </text>
+
+  <!-- K&J -->
+  <text x="400" y="475"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, serif" font-size="200" font-weight="900"
+        fill="#FFFFFF" letter-spacing="-6">K&amp;J</text>
+
+  <text x="400" y="478"
+        text-anchor="middle" dominant-baseline="middle"
+        font-family="Georgia, serif" font-size="200" font-weight="900"
+        fill="none" stroke="#D4A017" stroke-width="1.5"
+        letter-spacing="-6" opacity="0.25">K&amp;J</text>
+
+  <!-- Stars -->
+  <text x="165" y="482" text-anchor="middle" font-size="26" fill="#D4A017" opacity="0.85">★</text>
+  <text x="635" y="482" text-anchor="middle" font-size="26" fill="#D4A017" opacity="0.85">★</text>
+
+  <!-- TAMPA · FL -->
+  <text x="400" y="630"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="22" font-weight="600"
+        fill="rgba(255,255,255,.5)" letter-spacing="10">TAMPA · FL</text>
+</svg>

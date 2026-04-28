@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="K&J Caribbean Market & Restaurant Menu — Hot food, fresh produce, beverages, and catering in Tampa, FL.">
+  <meta name="theme-color" content="#0A6E6E">
+  <title>Menu — K&J Caribbean Market & Restaurant</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="logo/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+<!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <img src="logo/logo.svg" alt="K&J Caribbean" class="nav-logo" width="46" height="46">
+        <div class="nav-brand-text">
+          <span class="brand-name">K&amp;J Caribbean</span>
+          <span class="brand-sub">Market &amp; Restaurant</span>
+        </div>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html"   data-i18n="nav_home">Home</a>
+        <a href="menu.html"    data-i18n="nav_menu">Menu</a>
+        <a href="about.html"   data-i18n="nav_about">About</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <div class="lang-selector" id="lang-selector">
+          <button class="lang-toggle" aria-label="Select language">
+            <span class="lang-label">EN</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option active" data-lang="en"><span class="lang-flag">🇺🇸</span> English</button>
+            <button class="lang-option"        data-lang="fr"><span class="lang-flag">🇫🇷</span> Français</button>
+            <button class="lang-option"        data-lang="ht"><span class="lang-flag">🇭🇹</span> Kreyòl</button>
+            <button class="lang-option"        data-lang="es"><span class="lang-flag">🇪🇸</span> Español</button>
+          </div>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ PAGE HEADER ═══════════════════════════════════════ -->
+<header class="page-header">
+  <div class="container">
+    <h1 data-i18n="menu_title">Our Menu</h1>
+    <p data-i18n="menu_sub">Fresh, authentic, and made with love every day.</p>
+  </div>
+  <div class="page-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C360,60 720,10 1080,35 C1260,48 1380,28 1440,35 L1440,60 L0,60 Z" fill="#FFF5E6"/>
+    </svg>
+  </div>
+</header>
+
+<!-- ═══ MENU ══════════════════════════════════════════════ -->
+<main class="section section--cream" id="menu">
+  <div class="container">
+
+    <!-- Call to order banner -->
+    <div style="background:var(--teal-dark);color:white;border-radius:var(--r-md);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-bottom:3rem;">
+      <div>
+        <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--gold-light);font-weight:700;margin-bottom:.25rem;">Order &amp; Catering</div>
+        <div style="font-size:1rem;font-weight:600;">Call us for catering inquiries or special orders</div>
+      </div>
+      <a href="tel:8134430164" class="btn btn-primary">📞 813-443-0164</a>
+    </div>
+
+    <!-- Tabs -->
+    <div class="menu-tabs reveal">
+      <button class="tab-btn active" data-tab="menu-hot"      data-i18n="tab_hot">Hot Food</button>
+      <button class="tab-btn"        data-tab="menu-produce"  data-i18n="tab_produce">Market</button>
+      <button class="tab-btn"        data-tab="menu-drinks"   data-i18n="tab_drinks">Drinks</button>
+      <button class="tab-btn"        data-tab="menu-catering" data-i18n="tab_catering">Catering</button>
+    </div>
+
+    <!-- ── Hot Food ──────────────────────────────────────── -->
+    <div id="menu-hot" class="menu-panel active">
+      <div class="menu-card"><div class="menu-card-emoji">🥩</div><div class="tag">Popular</div><h4 data-i18n="hf1_name">Griot</h4><p class="desc" data-i18n="hf1_desc">Haitian marinated &amp; fried pork, crispy outside, tender inside.</p><div class="price" data-i18n="hf1_price">$12</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍚</div><h4 data-i18n="hf2_name">Diri ak Pwa</h4><p class="desc" data-i18n="hf2_desc">Haitian rice and beans — a classic comfort dish.</p><div class="price" data-i18n="hf2_price">$5</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍲</div><h4 data-i18n="hf3_name">Bouillon</h4><p class="desc" data-i18n="hf3_desc">Rich Haitian beef and vegetable soup.</p><div class="price" data-i18n="hf3_price">$10</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍗</div><div class="tag">Popular</div><h4 data-i18n="hf4_name">Jerk Chicken</h4><p class="desc" data-i18n="hf4_desc">Perfectly seasoned Caribbean jerk chicken, grilled to perfection.</p><div class="price" data-i18n="hf4_price">$12</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🫕</div><h4 data-i18n="hf5_name">Oxtail</h4><p class="desc" data-i18n="hf5_desc">Slow-braised tender oxtail in rich Caribbean sauce.</p><div class="price" data-i18n="hf5_price">$15</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍛</div><h4 data-i18n="hf6_name">Curry Goat</h4><p class="desc" data-i18n="hf6_desc">Aromatic curry goat with Caribbean spices.</p><div class="price" data-i18n="hf6_price">$14</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍌</div><h4 data-i18n="hf7_name">Fried Plantains</h4><p class="desc" data-i18n="hf7_desc">Sweet golden plantains, fried just right.</p><div class="price" data-i18n="hf7_price">$4</div></div>
+      <div class="menu-card"><div class="menu-card-emoji">🎃</div><div class="tag">Special</div><h4 data-i18n="hf8_name">Soup Joumou</h4><p class="desc" data-i18n="hf8_desc">Traditional Haitian pumpkin soup — a symbol of freedom.</p><div class="price" data-i18n="hf8_price">$10</div></div>
+    </div>
+
+    <!-- ── Market ─────────────────────────────────────────── -->
+    <div id="menu-produce" class="menu-panel">
+      <div class="menu-card"><div class="menu-card-emoji">🍌</div><h4 data-i18n="mk1_name">Plantains</h4><p class="desc" data-i18n="mk1_desc">Green or ripe — fresh tropical plantains.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🥔</div><h4 data-i18n="mk2_name">Malanga / Taro</h4><p class="desc" data-i18n="mk2_desc">Fresh Caribbean root vegetables.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🌿</div><h4 data-i18n="mk3_name">Yuca (Cassava)</h4><p class="desc" data-i18n="mk3_desc">Fresh yuca, a Caribbean staple.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍈</div><h4 data-i18n="mk4_name">Breadfruit</h4><p class="desc" data-i18n="mk4_desc">Fresh breadfruit when in season.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🌶️</div><h4 data-i18n="mk5_name">Scotch Bonnet Peppers</h4><p class="desc" data-i18n="mk5_desc">Fiery Caribbean peppers for authentic flavors.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🧂</div><h4 data-i18n="mk6_name">Caribbean Spice Blends</h4><p class="desc" data-i18n="mk6_desc">Specialty seasoning mixes and imported spices.</p></div>
+    </div>
+
+    <!-- ── Drinks ─────────────────────────────────────────── -->
+    <div id="menu-drinks" class="menu-panel">
+      <div class="menu-card"><div class="menu-card-emoji">🥛</div><div class="tag">Traditional</div><h4 data-i18n="dr1_name">Akasan</h4><p class="desc" data-i18n="dr1_desc">Traditional Haitian creamy corn drink.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍹</div><h4 data-i18n="dr2_name">Jus Tamarin</h4><p class="desc" data-i18n="dr2_desc">Sweet-tart tamarind juice.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🥥</div><h4 data-i18n="dr3_name">Coconut Water</h4><p class="desc" data-i18n="dr3_desc">Fresh natural coconut water.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🥤</div><h4 data-i18n="dr4_name">Tropical Sodas</h4><p class="desc" data-i18n="dr4_desc">Cola Champagne, Kola Couronne &amp; more.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍐</div><h4 data-i18n="dr5_name">Jus Corossol</h4><p class="desc" data-i18n="dr5_desc">Soursop juice, creamy and refreshing.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🍾</div><div class="tag">Ask Us</div><h4 data-i18n="dr6_name">Kremas</h4><p class="desc" data-i18n="dr6_desc">Haitian coconut cream liqueur (ask about availability).</p></div>
+    </div>
+
+    <!-- ── Catering ───────────────────────────────────────── -->
+    <div id="menu-catering" class="menu-panel">
+      <div class="menu-card"><div class="menu-card-emoji">🥘</div><h4 data-i18n="cat1_name">Party Platters</h4><p class="desc" data-i18n="cat1_desc">Large serving trays of our most popular dishes for events.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🎊</div><h4 data-i18n="cat2_name">Full Catering Package</h4><p class="desc" data-i18n="cat2_desc">Complete catering service for weddings, birthdays, and gatherings.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">📋</div><h4 data-i18n="cat3_name">Custom Menu</h4><p class="desc" data-i18n="cat3_desc">Work with us to create a custom menu for your event.</p></div>
+      <div class="menu-card"><div class="menu-card-emoji">🚗</div><h4 data-i18n="cat4_name">Delivery Available</h4><p class="desc" data-i18n="cat4_desc">We deliver to your venue — call for details and pricing.</p></div>
+    </div>
+
+    <!-- Note -->
+    <div style="background:var(--cream-dark);border:1px solid var(--border);border-radius:var(--r-sm);padding:1.25rem 1.5rem;margin-top:3rem;font-size:.88rem;color:var(--text-muted);">
+      💡 Menu items and pricing may vary. Please call <a href="tel:8134430164" style="color:var(--teal-dark);font-weight:600;">813-443-0164</a> for daily specials and catering pricing.
+    </div>
+
+  </div>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-wrap">
+          <img src="logo/logo.svg" alt="K&J Caribbean" class="footer-logo" width="54" height="54">
+          <div>
+            <div class="footer-brand-name">K&amp;J Caribbean</div>
+            <div class="footer-brand-sub">Market &amp; Restaurant</div>
+          </div>
+        </div>
+        <p data-i18n="footer_desc">Bringing authentic Caribbean flavors, fresh market produce, and island warmth to Tampa, Florida.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Instagram">📷</a>
+          <a href="#" class="footer-social" aria-label="Facebook">📘</a>
+          <a href="#" class="footer-social" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_links">Quick Links</h4>
+        <ul>
+          <li><a href="index.html"   data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html"    data-i18n="nav_menu">Menu</a></li>
+          <li><a href="about.html"   data-i18n="nav_about">About</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_info">Information</h4>
+        <ul>
+          <li><a href="menu.html" data-i18n="feat_restaurant">Restaurant</a></li>
+          <li><a href="menu.html" data-i18n="feat_market">Caribbean Market</a></li>
+          <li><a href="menu.html" data-i18n="feat_catering">Catering</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact">Contact</h4>
+        <div class="footer-contact-item"><span class="ico">📍</span><span class="txt" data-i18n="loc_address">7629 N 56th Street, Tampa, FL 33617</span></div>
+        <div class="footer-contact-item"><span class="ico">📞</span><span class="txt"><a href="tel:8134430164">813-443-0164</a></span></div>
+        <div class="footer-contact-item"><span class="ico">🕐</span><span class="txt" data-i18n="footer_hours">Mon–Sat: 9AM–8PM · Sun: 10AM–6PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> K&amp;J Caribbean Market &amp; Restaurant. <span data-i18n="footer_rights">All rights reserved.</span></p>
+      <p data-i18n="footer_tagline">Bringing the Caribbean to Tampa</p>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
