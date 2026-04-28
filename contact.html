@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact K&J Caribbean Market & Restaurant — 7629 N 56th Street, Tampa FL 33617. Call 813-443-0164. Catering inquiries welcome.">
+  <meta property="og:title"   content="Contact — K&J Caribbean Market & Restaurant">
+  <meta property="og:description" content="Visit us at 7629 N 56th Street Tampa FL or call 813-443-0164. Open 7 days a week.">
+  <meta property="og:url"    content="https://hilairejr16.github.io/kj-caribbean/contact.html">
+  <meta property="og:image"  content="https://hilairejr16.github.io/kj-caribbean/logo/logo.svg">
+  <link rel="canonical"      href="https://hilairejr16.github.io/kj-caribbean/contact.html">
   <meta name="theme-color" content="#0A6E6E">
   <title>Contact — K&J Caribbean Market & Restaurant</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=1777417734974">
   <link rel="icon" href="logo/logo.svg" type="image/svg+xml">
 </head>
 <body>
@@ -239,8 +244,13 @@
 
 <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/i18n.js?v=1777417734974"></script>
+<script src="js/main.js?v=1777417734974"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
+</script>
 </body>
 </html>

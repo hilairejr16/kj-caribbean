@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hilairejr16.github.io/kj-caribbean/sitemap.xml

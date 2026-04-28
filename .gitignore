@@ -12,5 +12,18 @@ desktop.ini
 # Logs
 *.log
 
-# Node (if ever used)
+# Node
 node_modules/
+
+# Raw/original large photos (compressed versions in images/market/ are committed)
+pic1.jpg
+pic2.jpg
+pic3.jpg
+pic4.jpg
+pic5.jpg
+pic6.jpg
+pic7.jpg
+pic8.jpg
+Old logo.jpeg
+images/originals/
+CNAME.bak

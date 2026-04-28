@@ -943,3 +943,237 @@ footer {
   .flyer-doc  { box-shadow: none; border-radius: 0; max-width: 100%; }
   body { background: white; }
 }
+
+/* ============================================================
+   GALLERY GRID & LIGHTBOX
+   ============================================================ */
+
+/* ── Grid ─────────────────────────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.gallery-card {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: var(--t);
+  background: var(--white);
+  outline-offset: 3px;
+}
+.gallery-card:hover,
+.gallery-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+.gallery-card--featured {
+  grid-column: span 2;
+}
+
+/* ── Thumbnail ────────────────────────────────────────────── */
+.gallery-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .45s var(--ease);
+  display: block;
+}
+.gallery-card:hover .gallery-thumb img {
+  transform: scale(1.05);
+}
+
+/* ── Overlay icons ────────────────────────────────────────── */
+.gallery-zoom,
+.gallery-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background: rgba(10, 110, 110, .45);
+  color: #fff;
+  opacity: 0;
+  transition: opacity .3s var(--ease);
+  pointer-events: none;
+}
+.gallery-card:hover .gallery-zoom,
+.gallery-card:hover .gallery-play-btn,
+.gallery-card:focus-visible .gallery-zoom,
+.gallery-card:focus-visible .gallery-play-btn {
+  opacity: 1;
+}
+
+/* ── Caption strip ────────────────────────────────────────── */
+.gallery-cap {
+  padding: .6rem 1rem;
+  font-size: .82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  background: var(--white);
+}
+
+/* ── Lightbox overlay ─────────────────────────────────────── */
+.kj-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.kj-lightbox.lb-active {
+  display: flex;
+}
+
+.lb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .88);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+/* ── Inner layout ─────────────────────────────────────────── */
+.lb-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 4.5rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ── Media wrapper ────────────────────────────────────────── */
+.lb-media-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vw;
+  max-height: 80vh;
+  pointer-events: auto;
+}
+.lb-img {
+  max-width: 88vw;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-xl);
+  display: block;
+}
+.lb-video {
+  max-width: 88vw;
+  max-height: 78vh;
+  border-radius: var(--r-sm);
+  box-shadow: var(--shadow-xl);
+  background: #000;
+  display: block;
+}
+
+/* ── Spinner ──────────────────────────────────────────────── */
+.lb-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid rgba(255,255,255,.2);
+  border-top-color: var(--teal-light);
+  border-radius: 50%;
+  animation: lb-spin .8s linear infinite;
+}
+@keyframes lb-spin { to { transform: rotate(360deg); } }
+
+/* ── Close button ─────────────────────────────────────────── */
+.lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.4);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  z-index: 2;
+  pointer-events: auto;
+}
+.lb-close:hover { background: rgba(255,255,255,.3); }
+
+/* ── Arrow buttons ────────────────────────────────────────── */
+.lb-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.15);
+  border: 1.5px solid rgba(255,255,255,.4);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+  pointer-events: auto;
+  z-index: 2;
+}
+.lb-arrow:hover { background: rgba(255,255,255,.3); }
+.lb-prev { left: 1rem; }
+.lb-next { right: 1rem; }
+
+/* ── Footer (caption + counter) ──────────────────────────── */
+.lb-footer {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 2;
+  width: 90vw;
+}
+.lb-caption {
+  color: rgba(255,255,255,.9);
+  font-size: .9rem;
+  margin-bottom: .25rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,.7);
+}
+.lb-counter {
+  color: rgba(255,255,255,.55);
+  font-size: .78rem;
+  letter-spacing: .04em;
+}
+
+/* ── Responsive adjustments ───────────────────────────────── */
+@media (max-width: 768px) {
+  .gallery-card--featured { grid-column: span 1; }
+  .lb-inner { padding: 3.5rem 1rem; }
+  .lb-arrow { width: 40px; height: 40px; font-size: 1.5rem; }
+  .lb-prev { left: .25rem; }
+  .lb-next { right: .25rem; }
+}
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .lb-close { top: .5rem; right: .5rem; }
+}
