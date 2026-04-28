@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    K&J Caribbean Market & Restaurant — Translations
    Languages: English (en), French (fr), Haitian Creole (ht), Spanish (es)
    ============================================================ */
@@ -8,7 +8,7 @@ const translations = {
   /* ── ENGLISH ─────────────────────────────────────────────── */
   en: {
     lang_label: "EN",
-    announce: "🌴 Open 7 Days a Week — Come taste the Caribbean! · Call us: 813-443-0164",
+    announce: "🌴 Open 7 Days a Week — Come taste the Caribbean! · Call us: 813-443-4557",
 
     // Nav
     nav_home:    "Home",
@@ -89,7 +89,7 @@ const translations = {
     loc_address_label: "Address",
     loc_address: "7629 N 56th Street, Tampa, FL 33617",
     loc_phone_label:   "Phone",
-    loc_phone:   "813-443-0164",
+    loc_phone:   "813-443-4557",
     loc_hours_label:   "Hours",
     loc_hours:   "Mon–Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM",
     loc_email_label:   "Email",
@@ -110,7 +110,7 @@ const translations = {
     form_message:        "Message",
     form_send:           "Send Message",
     form_success:        "✓ Thank you! Your message has been sent. We'll get back to you soon.",
-    form_error:          "Something went wrong. Please try calling us at 813-443-0164.",
+    form_error:          "Something went wrong. Please try calling us at 813-443-4557.",
 
     // About Page
     about_page_title: "About K&J Caribbean",
@@ -136,7 +136,7 @@ const translations = {
   /* ── FRANÇAIS ─────────────────────────────────────────────── */
   fr: {
     lang_label: "FR",
-    announce: "🌴 Ouvert 7 jours sur 7 — Venez goûter les Caraïbes ! · Appelez-nous : 813-443-0164",
+    announce: "🌴 Ouvert 7 jours sur 7 — Venez goûter les Caraïbes ! · Appelez-nous : 813-443-4557",
 
     nav_home:    "Accueil",
     nav_menu:    "Menu",
@@ -207,7 +207,7 @@ const translations = {
     loc_address_label: "Adresse",
     loc_address: "7629 N 56th Street, Tampa, FL 33617",
     loc_phone_label:   "Téléphone",
-    loc_phone:   "813-443-0164",
+    loc_phone:   "813-443-4557",
     loc_hours_label:   "Horaires",
     loc_hours:   "Lun–Sam : 9h – 20h<br>Dimanche : 10h – 18h",
     loc_email_label:   "Email",
@@ -227,7 +227,7 @@ const translations = {
     form_message:        "Message",
     form_send:           "Envoyer le Message",
     form_success:        "✓ Merci ! Votre message a été envoyé. Nous vous répondrons bientôt.",
-    form_error:          "Une erreur s'est produite. Veuillez nous appeler au 813-443-0164.",
+    form_error:          "Une erreur s'est produite. Veuillez nous appeler au 813-443-4557.",
 
     about_page_title: "À Propos de K&J Caribbean",
     about_page_sub:   "Notre histoire, nos valeurs et notre communauté.",
@@ -251,7 +251,7 @@ const translations = {
   /* ── KREYÒL AYISYEN ───────────────────────────────────────── */
   ht: {
     lang_label: "HT",
-    announce: "🌴 Ouvè 7 jou pa semèn — Vini goute Karayib la ! · Rele nou : 813-443-0164",
+    announce: "🌴 Ouvè 7 jou pa semèn — Vini goute Karayib la ! · Rele nou : 813-443-4557",
 
     nav_home:    "Akèy",
     nav_menu:    "Meni",
@@ -322,7 +322,7 @@ const translations = {
     loc_address_label: "Adrès",
     loc_address: "7629 N 56th Street, Tampa, FL 33617",
     loc_phone_label:   "Telefòn",
-    loc_phone:   "813-443-0164",
+    loc_phone:   "813-443-4557",
     loc_hours_label:   "Orè",
     loc_hours:   "Lendi–Samdi : 9h – 20h<br>Dimanch : 10h – 18h",
     loc_email_label:   "Imèl",
@@ -342,7 +342,7 @@ const translations = {
     form_message:        "Mesaj",
     form_send:           "Voye Mesaj",
     form_success:        "✓ Mèsi ! Mesaj ou a te voye. Nou pral reponn ou byento.",
-    form_error:          "Te gen yon erè. Tanpri rele nou nan 813-443-0164.",
+    form_error:          "Te gen yon erè. Tanpri rele nou nan 813-443-4557.",
 
     about_page_title: "Sou K&J Caribbean",
     about_page_sub:   "Istwa nou, valè nou, ak kominote nou.",
@@ -366,7 +366,7 @@ const translations = {
   /* ── ESPAÑOL ──────────────────────────────────────────────── */
   es: {
     lang_label: "ES",
-    announce: "🌴 Abierto 7 días a la semana — ¡Ven a probar el Caribe! · Llámanos: 813-443-0164",
+    announce: "🌴 Abierto 7 días a la semana — ¡Ven a probar el Caribe! · Llámanos: 813-443-4557",
 
     nav_home:    "Inicio",
     nav_menu:    "Menú",
@@ -437,7 +437,7 @@ const translations = {
     loc_address_label: "Dirección",
     loc_address: "7629 N 56th Street, Tampa, FL 33617",
     loc_phone_label:   "Teléfono",
-    loc_phone:   "813-443-0164",
+    loc_phone:   "813-443-4557",
     loc_hours_label:   "Horario",
     loc_hours:   "Lun–Sáb: 9:00 AM – 8:00 PM<br>Domingo: 10:00 AM – 6:00 PM",
     loc_email_label:   "Correo",
@@ -457,7 +457,7 @@ const translations = {
     form_message:        "Mensaje",
     form_send:           "Enviar Mensaje",
     form_success:        "✓ ¡Gracias! Tu mensaje ha sido enviado. Te responderemos pronto.",
-    form_error:          "Algo salió mal. Por favor llámanos al 813-443-0164.",
+    form_error:          "Algo salió mal. Por favor llámanos al 813-443-4557.",
 
     about_page_title: "Sobre K&J Caribbean",
     about_page_sub:   "Nuestra historia, nuestros valores y nuestra comunidad.",
