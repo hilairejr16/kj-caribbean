@@ -91,7 +91,7 @@ const translations = {
     loc_phone_label:   "Phone",
     loc_phone:   "813-443-4557",
     loc_hours_label:   "Hours",
-    loc_hours:   "Mon–Sat: 9:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 6:00 PM",
+    loc_hours:   "Mon–Sun: 8:00 AM – 9:00 PM",
     loc_email_label:   "Email",
     loc_email:   "info@kjcaribbean.com",
 
@@ -128,7 +128,7 @@ const translations = {
     footer_links:   "Quick Links",
     footer_info:    "Information",
     footer_contact: "Contact",
-    footer_hours:   "Mon–Sat: 9AM–8PM · Sun: 10AM–6PM",
+    footer_hours:   "Mon–Sun: 8:00 AM – 9:00 PM",
     footer_rights:  "All rights reserved.",
     footer_tagline: "Bringing the Caribbean to Tampa",
   },
@@ -209,7 +209,7 @@ const translations = {
     loc_phone_label:   "Téléphone",
     loc_phone:   "813-443-4557",
     loc_hours_label:   "Horaires",
-    loc_hours:   "Lun–Sam : 9h – 20h<br>Dimanche : 10h – 18h",
+    loc_hours:   "Lun–Dim : 8h – 21h",
     loc_email_label:   "Email",
     loc_email:   "info@kjcaribbean.com",
 
@@ -324,7 +324,7 @@ const translations = {
     loc_phone_label:   "Telefòn",
     loc_phone:   "813-443-4557",
     loc_hours_label:   "Orè",
-    loc_hours:   "Lendi–Samdi : 9h – 20h<br>Dimanch : 10h – 18h",
+    loc_hours:   "Lendi–Dimanch : 8h – 21h",
     loc_email_label:   "Imèl",
     loc_email:   "info@kjcaribbean.com",
 
@@ -439,7 +439,7 @@ const translations = {
     loc_phone_label:   "Teléfono",
     loc_phone:   "813-443-4557",
     loc_hours_label:   "Horario",
-    loc_hours:   "Lun–Sáb: 9:00 AM – 8:00 PM<br>Domingo: 10:00 AM – 6:00 PM",
+    loc_hours:   "Lun–Dom: 8:00 AM – 9:00 PM",
     loc_email_label:   "Correo",
     loc_email:   "info@kjcaribbean.com",
 
@@ -473,7 +473,7 @@ const translations = {
     footer_links:   "Enlaces Rápidos",
     footer_info:    "Información",
     footer_contact: "Contacto",
-    footer_hours:   "Lun–Sáb: 9AM–8PM · Dom: 10AM–6PM",
+    footer_hours:   "Lun–Dom: 8AM–9PM",
     footer_rights:  "Todos los derechos reservados.",
     footer_tagline: "El Caribe en Tampa",
   }

@@ -5,7 +5,7 @@
  */
 'use strict';
 
-const CACHE_NAME = 'kj-v1777482250';
+const CACHE_NAME = 'kj-v1777506484';
 
 const PRECACHE = [
   './',
