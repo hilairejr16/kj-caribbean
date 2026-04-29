@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hilairejr16.github.io/kj-caribbean/sitemap.xml
+Sitemap: https://www.kjcaribbean.com/sitemap.xml

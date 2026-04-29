@@ -3,18 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Not Found — K&J Caribbean</title>
-  <link rel="stylesheet" href="css/style.css?v=1777418152899">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#0A6E6E">
+  <title>Page Not Found — K&J Caribbean Market & Restaurant</title>
+  <link rel="stylesheet" href="css/style.css?v=1777482250029">
   <link rel="icon" href="logo/logo.svg" type="image/svg+xml">
 </head>
-<body style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--cream);">
-  <div style="text-align:center;padding:3rem 1.5rem;max-width:500px;">
-    <img src="logo/logo.svg" alt="K&J Caribbean" style="width:100px;height:100px;margin:0 auto 2rem;border-radius:50%;">
-    <h1 style="font-family:var(--font-head);font-size:3rem;color:var(--teal-dark);margin-bottom:.5rem;">404</h1>
-    <h2 style="font-family:var(--font-head);color:var(--text);margin-bottom:1rem;">Page Not Found</h2>
-    <p style="color:var(--text-muted);margin-bottom:2rem;">The page you're looking for doesn't exist. Head back to our home page!</p>
-    <a href="index.html" class="btn btn-primary">← Back to Home</a>
+<body>
+
+<!-- ═══ NAVBAR ════════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand" aria-label="K&J Caribbean Home">
+        <img src="logo/logo.svg" alt="K&J Caribbean" class="nav-logo" width="46" height="46">
+        <div class="nav-brand-text">
+          <span class="brand-name">K&amp;J Caribbean</span>
+          <span class="brand-sub">Market &amp; Restaurant</span>
+        </div>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </div>
-  <script src="js/i18n.js?v=1777418152899"></script>
+</nav>
+
+<!-- ═══ 404 CONTENT ═══════════════════════════════════════ -->
+<main style="min-height:80vh;display:flex;align-items:center;justify-content:center;background:var(--cream);padding:4rem 1.5rem;">
+  <div style="text-align:center;max-width:540px;">
+    <img src="logo/logo.svg" alt="K&J Caribbean" style="width:110px;height:110px;border-radius:50%;margin:0 auto 2rem;display:block;box-shadow:var(--shadow-md);">
+    <div style="font-size:5rem;font-weight:900;font-family:var(--font-head);color:var(--teal);line-height:1;margin-bottom:.5rem;">404</div>
+    <h1 style="font-family:var(--font-head);font-size:1.8rem;color:var(--text);margin-bottom:1rem;">Page Not Found</h1>
+    <p style="color:var(--text-muted);margin-bottom:.75rem;line-height:1.7;">
+      Looks like this page took a trip to the islands and didn't come back!<br>
+      Let's get you back to something delicious.
+    </p>
+    <p style="color:var(--text-muted);margin-bottom:2.5rem;font-size:.9rem;">
+      📍 7629 N 56th Street, Tampa, FL 33617 &nbsp;·&nbsp; 📞 <a href="tel:8134434557" style="color:var(--teal);">813-443-4557</a>
+    </p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-primary">← Back to Home</a>
+      <a href="menu.html"  class="btn btn-teal">View Our Menu</a>
+    </div>
+
+    <!-- Quick links -->
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+      <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;text-transform:uppercase;letter-spacing:.08em;">Popular pages</p>
+      <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+        <a href="menu.html#menu-hot"      style="color:var(--teal);font-size:.9rem;text-decoration:none;">🍽️ Hot Food</a>
+        <a href="menu.html#menu-produce"  style="color:var(--teal);font-size:.9rem;text-decoration:none;">🛒 Market</a>
+        <a href="menu.html#menu-catering" style="color:var(--teal);font-size:.9rem;text-decoration:none;">🎉 Catering</a>
+        <a href="contact.html"            style="color:var(--teal);font-size:.9rem;text-decoration:none;">📞 Contact</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> K&amp;J Caribbean Market &amp; Restaurant. All rights reserved.</p>
+      <p>Bringing the Caribbean to Tampa</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=1777482250029"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').catch(() => {});
+  }
+</script>
 </body>
 </html>

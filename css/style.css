@@ -395,6 +395,25 @@ p  { font-size: 1rem; line-height: 1.75; color: var(--text-muted); }
   justify-content: center;
   flex-wrap: wrap;
 }
+/* ── Hero quick-contact strip ───────────────────────────── */
+.hero-quick-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  margin-top: 1.5rem;
+  font-size: .82rem;
+  color: rgba(255,255,255,.75);
+}
+.hero-qc-link {
+  color: rgba(255,255,255,.9);
+  text-decoration: none;
+  transition: color .2s;
+}
+.hero-qc-link:hover { color: var(--gold-light); }
+.hero-qc-sep { color: rgba(255,255,255,.4); }
+
 .hero-wave {
   position: absolute;
   bottom: -1px; left: 0; right: 0;

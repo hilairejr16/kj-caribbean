@@ -3,25 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="K&J Caribbean Market and Restaurant — Tampa, FL. Fresh tropical groceries, authentic island cuisine, and catering. Open 7 days a week.">
-  <meta name="keywords" content="Caribbean restaurant Tampa, Haitian food Tampa, Caribbean market Tampa, griot, jerk chicken, tropical groceries">
+  <meta name="description" content="K&J Caribbean Market & Restaurant — Tampa's home for authentic Caribbean food. Griot, jerk chicken, oxtail, plantains & tropical groceries. Open 7 days at 7629 N 56th St, Tampa FL.">
+  <meta name="keywords" content="Caribbean restaurant Tampa FL, Haitian restaurant Tampa, Caribbean market Tampa, griot Tampa, jerk chicken Tampa, oxtail Tampa, tropical groceries Tampa, Haitian food Tampa, Caribbean catering Tampa, plantains Tampa, Caribbean food near me">
   <!-- Open Graph / Social sharing -->
   <meta property="og:title"       content="K&J Caribbean Market & Restaurant | Tampa, FL">
-  <meta property="og:description" content="Fresh Caribbean groceries, authentic island cuisine, and catering in Tampa, FL. Call 813-443-4557.">
-  <meta property="og:type"        content="website">
+  <meta property="og:description" content="Tampa's authentic Caribbean market & restaurant. Griot, jerk chicken, oxtail, fresh tropical groceries & catering. Open 7 days — 813-443-4557.">
+  <meta property="og:type"        content="restaurant">
   <meta property="og:url"         content="https://hilairejr16.github.io/kj-caribbean/">
-  <meta property="og:image"       content="https://hilairejr16.github.io/kj-caribbean/logo/logo.svg">
+  <meta property="og:image"       content="https://hilairejr16.github.io/kj-caribbean/images/market/market-03.jpg">
+  <meta property="og:image:width"  content="1600">
+  <meta property="og:image:height" content="900">
   <meta property="og:locale"      content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="es_ES">
   <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary">
+  <meta name="twitter:card"        content="summary_large_image">
   <meta name="twitter:title"       content="K&J Caribbean Market & Restaurant | Tampa, FL">
-  <meta name="twitter:description" content="Fresh Caribbean groceries, authentic island cuisine &amp; catering in Tampa, FL.">
-  <meta name="twitter:image"       content="https://hilairejr16.github.io/kj-caribbean/logo/logo.svg">
+  <meta name="twitter:description" content="Tampa's authentic Caribbean market & restaurant. Griot, jerk chicken, oxtail & tropical groceries. Open 7 days.">
+  <meta name="twitter:image"       content="https://hilairejr16.github.io/kj-caribbean/images/market/market-03.jpg">
   <meta name="theme-color"         content="#0A6E6E">
+  <meta name="geo.region"          content="US-FL">
+  <meta name="geo.placename"       content="Tampa">
+  <meta name="geo.position"        content="28.0395;-82.4233">
+  <meta name="ICBM"                content="28.0395, -82.4233">
   <link rel="canonical"            href="https://hilairejr16.github.io/kj-caribbean/">
-  <title>K&J Caribbean Market & Restaurant | Tampa, FL</title>
-  <link rel="stylesheet" href="css/style.css?v=1777418152899">
+  <!-- Performance: preconnect to font origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>K&J Caribbean Market & Restaurant | Tampa, FL — Griot, Jerk Chicken & Tropical Groceries</title>
+  <link rel="stylesheet" href="css/style.css?v=1777482250029">
   <link rel="icon" href="logo/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="logo/logo.svg">
   <!-- Local Business Schema (Google Rich Results) -->
   <script type="application/ld+json">
   {
@@ -66,7 +78,55 @@
     "paymentAccepted": "Cash, Credit Card",
     "hasMap": "https://maps.google.com/?q=7629+N+56th+Street+Tampa+FL+33617",
     "areaServed": "Tampa, FL",
-    "inLanguage": ["en", "fr", "ht", "es"]
+    "inLanguage": ["en", "fr", "ht", "es"],
+    "menu": "https://hilairejr16.github.io/kj-caribbean/menu.html",
+    "sameAs": [
+      "https://www.google.com/maps?q=7629+N+56th+Street+Tampa+FL+33617"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "K&J Caribbean Menu",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Griot", "description": "Haitian marinated & fried pork, crispy outside, tender inside.", "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "USD" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Jerk Chicken", "description": "Perfectly seasoned Caribbean jerk chicken, grilled to perfection.", "offers": { "@type": "Offer", "price": "12.00", "priceCurrency": "USD" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Oxtail", "description": "Slow-braised tender oxtail in rich Caribbean sauce.", "offers": { "@type": "Offer", "price": "15.00", "priceCurrency": "USD" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "MenuItem", "name": "Soup Joumou", "description": "Traditional Haitian pumpkin soup — a symbol of freedom.", "offers": { "@type": "Offer", "price": "10.00", "priceCurrency": "USD" } } }
+      ]
+    }
+  }
+  </script>
+  <!-- FAQ Schema for Google rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Where is K&J Caribbean Market and Restaurant located?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We are located at 7629 N 56th Street, Tampa, FL 33617. Easy to find near the heart of Tampa's Caribbean community." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are K&J Caribbean's hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We are open Monday through Saturday 9:00 AM – 8:00 PM, and Sunday 10:00 AM – 6:00 PM." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does K&J Caribbean do catering?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We offer full catering services for weddings, birthdays, corporate events, and any gathering. Call us at 813-443-4557 or visit our contact page to request a quote." }
+      },
+      {
+        "@type": "Question",
+        "name": "What type of food does K&J Caribbean serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We serve authentic Haitian and Caribbean cuisine including griot (marinated fried pork), jerk chicken, oxtail, curry goat, Soup Joumou, diri ak pwa (rice and beans), fried plantains, and more. We also carry a full Caribbean grocery market with tropical produce, spices, and imported goods." }
+      },
+      {
+        "@type": "Question",
+        "name": "What languages does K&J Caribbean speak?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We speak English, French, Haitian Creole (Kreyòl), and Spanish — so everyone feels welcome." }
+      }
+    ]
   }
   </script>
 </head>
@@ -126,6 +186,13 @@
     <div class="hero-actions">
       <a href="menu.html"    class="btn btn-primary"       data-i18n="hero_cta1">View Our Menu</a>
       <a href="contact.html" class="btn btn-outline-white" data-i18n="hero_cta2">Find Us</a>
+    </div>
+    <div class="hero-quick-contact">
+      <a href="tel:8134434557" class="hero-qc-link">📞 813-443-4557</a>
+      <span class="hero-qc-sep">·</span>
+      <a href="https://wa.me/18134434557" target="_blank" rel="noopener" class="hero-qc-link">💬 WhatsApp</a>
+      <span class="hero-qc-sep">·</span>
+      <span class="hero-qc-link" data-i18n="footer_hours">Mon–Sat 9AM–8PM · Sun 10AM–6PM</span>
     </div>
   </div>
   <div class="hero-wave">
@@ -337,9 +404,9 @@
         </div>
         <p data-i18n="footer_desc">Bringing authentic Caribbean flavors, fresh market produce, and island warmth to Tampa, Florida.</p>
         <div class="footer-socials">
-          <a href="#" class="footer-social" aria-label="Instagram">📷</a>
-          <a href="#" class="footer-social" aria-label="Facebook">📘</a>
-          <a href="#" class="footer-social" aria-label="Twitter/X">🐦</a>
+          <a href="https://www.instagram.com/kjcaribbeantampa/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">📷</a>
+          <a href="https://www.facebook.com/kjcaribbeantampa" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Facebook">📘</a>
+          <a href="https://www.twitter.com/kjcaribbean" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Twitter/X">🐦</a>
         </div>
       </div>
 
@@ -391,10 +458,10 @@
 <!-- Scroll to top -->
 <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
 
-<script src="data/gallery.js?v=1777418152899"></script>
-<script src="js/gallery.js?v=1777418152899"></script>
-<script src="js/i18n.js?v=1777418152899"></script>
-<script src="js/main.js?v=1777418152899"></script>
+<script src="data/gallery.js?v=1777482250029"></script>
+<script src="js/gallery.js?v=1777482250029"></script>
+<script src="js/i18n.js?v=1777482250029"></script>
+<script src="js/main.js?v=1777482250029"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   if ('serviceWorker' in navigator) {

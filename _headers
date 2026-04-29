@@ -1,0 +1,31 @@
+/*
+  # Security Headers for K&J Caribbean
+  # Applied via Cloudflare (set in CF dashboard → Rules → Transform Rules → Modify Response Headers)
+  # OR via GitHub Pages _headers file (Netlify-style — not natively supported by GitHub Pages,
+  # but Cloudflare proxy will apply its own headers on top).
+  #
+  # ACTION NEEDED: In Cloudflare dashboard, add these as HTTP Response Headers rules.
+*/
+
+/*
+  Cloudflare Response Header Rules to add:
+  (Dashboard → your domain → Rules → Transform Rules → Modify Response Headers → Create Rule)
+
+  X-Frame-Options: SAMEORIGIN
+    Prevents your site being embedded in iframes on other sites (clickjacking protection).
+
+  X-Content-Type-Options: nosniff
+    Stops browsers from guessing file types (MIME sniffing attacks).
+
+  Referrer-Policy: strict-origin-when-cross-origin
+    Controls how much referrer info is sent when navigating away.
+
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+    Disables browser APIs the site doesn't use.
+
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://maps.google.com https://www.google.com; connect-src 'self' https://formspree.io; upgrade-insecure-requests
+    Controls what resources the browser is allowed to load.
+
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+    Forces HTTPS for 1 year (Cloudflare enables this automatically on Full SSL mode).
+*/
